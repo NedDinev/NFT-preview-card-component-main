@@ -1,0 +1,87 @@
+$background: #0d1a2d;
+$card-background: #15273f;
+$aqua-color: #05fafa;
+$white-text: #ffffff;
+$gray-text: #8aa9d6;
+@mixin NFT-size-and-shape {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+body {
+  background-color: $background;
+}
+
+.card {
+  width: 360px;
+  background-color: $card-background;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 1px #000000;
+
+  a {
+    color: $white-text;
+    text-decoration: none;
+    &:hover {
+      color: $aqua-color;
+    }
+  }
+  .NFT_overlay {
+    position: absolute;
+    @include NFT-size-and-shape;
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        rgba($aqua-color, 0.5),
+        rgba($aqua-color, 0.5)
+      );
+
+      &:hover i {
+        display: unset;
+        color: $white-text;
+      }
+    }
+    i {
+      font-size: 40px;
+      display: none;
+    }
+  }
+
+  .NFT {
+    @include NFT-size-and-shape;
+  }
+
+  .card-title {
+    color: $white-text;
+  }
+  .card-subtitle {
+    color: $gray-text;
+  }
+  .price {
+    color: $aqua-color;
+  }
+  .days-left {
+    color: $gray-text;
+  }
+
+  hr {
+    color: $gray-text;
+  }
+
+  .user {
+    width: 30px;
+    border: 1px solid $white-text;
+    border-radius: 50%;
+  }
+
+  .creator {
+    color: $gray-text;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $white-text;
+}
