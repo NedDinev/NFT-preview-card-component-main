@@ -32,6 +32,7 @@ Users should be able to:
 
 ### Links
 
+- Live preview: https://nft-preview-card-component-pink.vercel.app/
 - Solution URL: https://github.com/NedDinev/NFT-preview-card-component-main/tree/main/nft-preview-card-component-main
 
 
