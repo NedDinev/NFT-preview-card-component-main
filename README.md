@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 <img src="project_screenshot.png">
-
+<img src="/nft-preview-card-component-main/design/active-states.jpg"
 
 ### Links
 
